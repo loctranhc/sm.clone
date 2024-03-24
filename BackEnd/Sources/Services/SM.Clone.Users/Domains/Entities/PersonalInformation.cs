@@ -21,6 +21,10 @@ namespace Domains.Entities
         public string Email { get; set; } = string.Empty;
         [Required]
         public bool IsEmailValidation { get; set; } = false;
+        [MaxLength(25)]
+        public string PassportNumber { get; set; } = string.Empty;
+        [MaxLength(25)]
+        public string IdentificationCardNumber { get; set; } = string.Empty;
         public virtual User User { get; set; } = new User();
     }
 }
