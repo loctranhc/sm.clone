@@ -21,7 +21,7 @@ namespace Api.Configurations
         {
             var fileName = $"appsettings.json";
 
-            if (string.IsNullOrEmpty(environment))
+            if (!string.IsNullOrEmpty(environment))
             {
                 fileName = $"appsettings.{environment}.json";
             }
