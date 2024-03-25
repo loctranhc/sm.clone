@@ -11,9 +11,6 @@ namespace Domains.Entities
         [Required]
         [MaxLength(25)]
         public string AccountName { get; set; } = string.Empty;
-        [Required]
-        [MaxLength(255)]
-        public string Password { get; set; } = string.Empty;
         public virtual PersonalInformation PersonalInformation { get; set; } = new PersonalInformation();
         public virtual ICollection<Address> Addresses {get; set;} = Array.Empty<Address>();
     }
